@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kris Ganzhula](https://up.htmlacademy.ru/htmlcss/30/user/1633211).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
