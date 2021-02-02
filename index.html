@@ -5,7 +5,6 @@
     <title>Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -33,9 +32,9 @@
         </a>
       </div>
       <div class="main-header__bottom header-bottom">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1 class="header-bottom__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="header-bottom__contacts">
-          <a class="header-bottom__tel" href="tel:+78125550555"><span>+7 (812) 555-05-55</span></a>
+          <a class="header-bottom__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <ul class="header-bottom__user-nav">
@@ -98,29 +97,31 @@
             <a class="item-demo__btn" href="/blank.html">бесплатно</a>
           </li>
         </ul>
-        <figure class="demo-block__slider">
-          <div class="demo-block__slide slide-item">
-            <div class="slide-item__desc">
-              <h3 class="slide-item__title">Перфораторы</h3>
-              <p class="slide-item__text">Настоящие мужские игрушки</p>
-            </div>
-            <a class="slide-item__pic" href="#">
-              <img src="img/perforator.jpg" width="620" height="266" alt="Фото Перфоратор">
-            </a>
-          </div>
-          <div class="demo-block__slide slide-item">
-            <div class="slide-item__desc">
-              <h3 class="slide-item__title">Дрели</h3>
-              <p class="slide-item__text">Соседям на радость!</p>
-            </div>
-            <a class="slide-item__pic" href="#">
-              <img src="img/drel.jpg" width="620" height="266" alt="Фото Дрели">
-            </a>
-          </div>
+        <div class="demo-block__slider">
+          <ul class="demo-block__slider-list">
+            <li class="demo-block__slide slide-item">
+              <div class="slide-item__desc">
+                <h3 class="slide-item__title">Перфораторы</h3>
+                <p class="slide-item__text">Настоящие мужские игрушки</p>
+              </div>
+              <a class="slide-item__pic" href="#">
+                <img src="img/perforator.jpg" width="620" height="266" alt="Фото Перфоратор">
+              </a>
+            </li>
+            <li class="demo-block__slide slide-item">
+              <div class="slide-item__desc">
+                <h3 class="slide-item__title">Дрели</h3>
+                <p class="slide-item__text">Соседям на радость!</p>
+              </div>
+              <a class="slide-item__pic" href="#">
+                <img src="img/drel.jpg" width="620" height="266" alt="Фото Дрели">
+              </a>
+            </li>
+          </ul>
           <button class="demo-block__control next-slide" type="button"><span>Назад</span></button>
           <button class="demo-block__control back-slide" type="button"><span>Вперед</span></button>
           <a class="button slider-link-catalog" href="/catalog.html">Открыть каталог</a>
-        </figure>
+        </div>
       </section>
       <section class="popular-product">
         <div class="caption-section popular-product">
@@ -129,9 +130,7 @@
         </div>
         <ul class="popular-product__list product-card">
           <li class="product-card__item">
-            <div class="product-card__front-side">
-              <img src="img/bosh-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </div>
+            <img class="product-card__front-side" src="img/bosh-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             <div class="product-card__back-side">
               <button class="product-card__btn btn-buy" type="button">Купить</button>
               <button class="product-card__btn btn-mark" type="button">В закладки</button>
@@ -145,9 +144,7 @@
             </div>
           </li>
           <li class="product-card__item">
-            <div class="product-card__front-side">
-              <img src="img/bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </div>
+            <img class="product-card__front-side" src="img/bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <div class="product-card__back-side">
               <button class="product-card__btn btn-buy" type="button">Купить</button>
               <button class="product-card__btn btn-mark" type="button">В закладки</button>
@@ -161,9 +158,7 @@
             </div>
           </li>
           <li class="product-card__item">
-            <div class="product-card__front-side">
-              <img src="img/bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </div>
+            <img class="product-card__front-side" src="img/bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <div class="product-card__back-side">
               <button class="product-card__btn btn-buy" type="button">Купить</button>
               <button class="product-card__btn btn-mark" type="button">В закладки</button>
@@ -177,9 +172,7 @@
             </div>
           </li>
           <li class="product-card__item">
-            <div class="product-card__front-side">
-              <img src="img/bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            </div>
+            <img class="product-card__front-side" src="img/bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <div class="product-card__back-side">
               <button class="product-card__btn btn-buy" type="button">Купить</button>
               <button class="product-card__btn btn-mark" type="button">В закладки</button>
