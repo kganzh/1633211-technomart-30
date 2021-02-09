@@ -146,7 +146,6 @@ a {
 /* Header styles */
 
 .main-header{
-  margin-bottom: 59px;
 }
 
 .main-header__top-wrapper {
@@ -289,6 +288,8 @@ a {
   list-style: none;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-login__link {
@@ -350,6 +351,7 @@ a {
   margin: 0 auto;
   display: grid;
   gap: 20px;
+  margin-top: 59px;
   margin-bottom: 59px;
 
   outline: 5px solid rgba(4, 0, 255, 0.993);
@@ -424,7 +426,7 @@ a {
 
 .demo-block__slide.slide-item {
   display: grid;
-  grid-template-rows: ;
+  /* grid-template-rows: ; */
 }
 
 .slide-item__title {
@@ -496,6 +498,13 @@ a {
   gap: 20px;
   padding: 0;
   margin-bottom: 70px;
+}
+
+.popular-product__list.product-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card__item {
@@ -768,7 +777,14 @@ a {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   color: var(--basic-black);
+
+}
+
+.page-catalog__wrapper {
   width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
 }
 
 .caption-basic.catalog,
@@ -778,10 +794,16 @@ a {
 
 .caption-basic.catalog {
   background-color: var(--caption-catalog);
+  grid-column: 1 / -1;
+  margin: 0 0 20px 0;
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .breadcrumbs {
   list-style: none;
+  grid-column: 1/ -1;
+  margin: 21px 0 20px 0;
 }
 
 .breadcrumbs a {
@@ -806,6 +828,9 @@ a {
   line-height: 18px;
   font-weight: 400;
   background-color: var(--basic-warm);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .filter legend {
@@ -818,6 +843,7 @@ a {
   list-style: none;
   font-size: 15px;
   line-height: 19px;
+  margin: 0;
 }
 
 .filter-price__range {
@@ -867,6 +893,8 @@ a {
 
 .sorting {
   background-color: var(--basic-warm);
+  width: 700px;
+  margin-bottom: 28px;
 }
 
 .sorting h3,
@@ -879,6 +907,9 @@ font-weight: 400;
 
 .sorting ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 .sorting__btn {
@@ -908,6 +939,8 @@ font-weight: 400;
 
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a {
@@ -933,11 +966,30 @@ font-weight: 400;
 
 /* catalog-description style */
 
-.catalog-description {
+.catalog-description-wrapper {
   background-color: var(--basic-cold);
+}
+
+.caption-basic.catalog-desc {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-description {
   font-size: 13px;
   line-height: 24px;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 64px;
 }
+
+.catalog-description p {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 68px;
+}
+
 
 
 /* footer  style  */
