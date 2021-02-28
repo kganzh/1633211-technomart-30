@@ -635,39 +635,33 @@ a {
   grid-column: 8 / 9;
   grid-row: 2 / 3;
   border: none;
-  position: relative;
-}
-.demo-block__control.back-slide {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border: none;
-  position: relative;
-}
 
-.demo-block__control.next-slide::after {
-  content: "";
-  position: absolute;
+  position: relative;
+  top: 10px;
   right: 20px;
-  bottom: -20px;
   width: 22px;
   height: 40px;
   background-image: url("../img/icons/icon-left.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0 ;
   transform: rotate(180deg);
   cursor: pointer;
 }
+.demo-block__control.back-slide {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  border: none;
 
-.demo-block__control.back-slide::after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  bottom: -20px;
+  position: relative;
+  top: 10px;
+  left: 24px;
   width: 22px;
   height: 40px;
   background-image: url("../img/icons/icon-left.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 0 0 ;
+  background-position: 0 0;
   cursor: pointer;
 }
 
