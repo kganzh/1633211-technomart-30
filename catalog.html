@@ -18,14 +18,15 @@
           <a class="button main-header__logo" href="/index.html">
             <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарт">
           </a>
-          <label class="main-header__search" for="search" >Поиск:
-            <input type="search" id="search" placeholder="Перфоратор">
+          <label class="main-header__search" for="search">
+            <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542C10.782 14.421 9.21 15 7.5 15 3.35786 15 0 11.6421 0 7.5 0 3.35786 3.35786 0 7.5 0 11.6421 0 15 3.35786 15 7.5c.0001 1.64309-.5419 3.2403-1.542 4.544zM7.5 2C4.467 2 2 4.467 2 7.5c.00331 3.0362 2.4638 5.4967 5.5 5.5 3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff"/></svg>
+            <input type="search" id="search" placeholder="Поиск:">
           </label>
           <a class="main-header__mark" href="/blank.html">
-            Закладки:<span>0</span>
+            Закладки:<span> 0</span>
           </a>
           <a class="main-header__cart inner-page" href="/blank.html">
-            Корзина:<span>12</span>
+            Корзина:<span> 12</span>
           </a>
           <a class="main-header__order" href="/blank.html">
             Оформить заказ
@@ -85,16 +86,39 @@
 		<main class="page-catalog container">
       <div class="page-catalog__wrapper">
         <ul class="breadcrumbs">
-          <li><a href="/index.html"><span>Главная</span></a></li>
+          <li>
+            <a href="/index.html">
+              <span class="visually-hidden">Главная</span>
+              <svg width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7.99999V12h4V7.99999h2V12h4V7.99999l-5-4.484-5 4.484z" fill="#C1C6CE"/><path d="M13.831 6.365L12 4.751V0H9.99998v2.987L7.33198.635c-.02-.017-.043-.023-.064-.037-.02504-.018295-.05184-.03404-.08-.047-.0309-.010805-.06269-.018837-.095-.024-.031-.006-.061-.012-.093-.012-.031 0-.061.006-.092.012-.03247.004919-.06432.0133-.095.025-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037L.170976 6.365c-.1547359.13791-.2085713.35687-.1354286.5508.0731426.19394.2581596.32282.4654286.3242.121931.00035.239735-.04414.331-.125L6.99998 1.677 13.169 7.115c.2088.16413.5094.13678.6852-.06235.1757-.19913.1656-.50082-.0232-.68765z" fill="#C1C6CE"/></svg>
+            </a>
+          </li>
           <li><a href="/catalog.html">Каталог</a></li>
           <li><a href="/blank.html">Инструмент</a></li>
-          <li><a href="/blank.html">Перфораторы</a></li>
+          <li class="breadcrumbs-current"><a href="/blank.html">Перфораторы</a></li>
         </ul>
         <h1 class="caption-basic catalog">Перфораторы</h1>
         <section class="filters">
           <h2>Фильтр:</h2>
           <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="filter-item">
+              <legend class="filter-price_caption">Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price"><input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
+          </fieldset>
+            <!-- <fieldset>
               <legend class="filter-price_caption">Цена:</legend>
               <label class="filter-price__range" for="filter-price">
                 <input type="range" name="price" id="filter-price" min="0" max="30000">
@@ -107,28 +131,28 @@
                   <span>30000</span>
                 </li>
               </ul>
-            </fieldset>
+            </fieldset> -->
             <fieldset>
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="bosh" id="filter-bosh" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosh" id="filter-bosh" checked>
                   <label for="filter-bosh">BOSCH</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="interskol" id="filter-interskol">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interskol" id="filter-interskol">
                   <label for="filter-interskol">ИНТЕРСКОЛ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -137,11 +161,11 @@
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="filter-input-radio filter-input" type="radio" name="power" value="accumulator" id="filter-accumulator" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" value="accumulator" id="filter-accumulator" checked>
                   <label for="filter-accumulator">Аккумуляторные</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input class="filter-input-radio filter-input" type="radio" name="power" value="network-battery" id="filter-network-battery">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" value="network-battery" id="filter-network-battery">
                   <label for="filter-network-battery">Сетевые</label>
                 </li>
               </ul>
@@ -150,7 +174,7 @@
           </form>
         </section>
         <section class="catalog">
-          <h2>Каталог перфораторов</h2>
+          <h2 class="visually-hidden">Каталог перфораторов</h2>
           <div class="sorting">
             <h3>Сортировка:</h3>
             <ul class="sorting__list">
@@ -166,10 +190,14 @@
             </ul>
             <ul class="sorting__list list-up-down">
               <li class="list-up-down todown">
-                <button class="todown-btn" type="button">По убывающей</button>
+                <button class="todown-btn" type="button">
+                  <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L11 10H0" fill="#C5C5C5"/></svg>
+                </button>
               </li>
               <li class="list-up-down toup">
-                <button class="toup-btn" type="button">По возрастающей</button>
+                <button class="toup-btn" type="button">
+                  <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#C5C5C5"/></svg>
+                </button>
               </li>
             </ul>
           </div>
@@ -360,13 +388,22 @@
           </p>
           <ul class="main-footer__social-list">
             <li class="main-footer__social-item">
-              <a href="#">Вконтакте</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.5403 11.7281c.9206-.2897 2.0992 1.9125 3.354 2.7553.9417.6385 1.663.5007 1.663.5007l3.3444-.0469s1.7478-.105.9215-1.4569c-.0683-.1125-.4843-1.0022-2.4892-2.8331-2.0964-1.91534-1.8123-1.60502.7116-4.91627 1.5379-2.01844 2.1532-3.25125 1.9606-3.77625-.1849-.50532-1.3144-.37407-1.3144-.37407l-3.7681.02532c-.3669.00093-.6779.11156-.8195.48281-.0029.00375-.598 1.56187-1.3915 2.88656-1.6765 2.80219-2.3458 2.95125-2.6231 2.77594-.6365-.40594-.4757-1.62844-.4757-2.4975 0-2.71594.416-3.84844-.8147-4.14094-.4112-.0975-.7116-.161248-1.7603-.170623-1.3404-.019688-2.47863 0-3.12382.308433-.42852.20907-.75689.6675-.55755.69375.25037.03282.81177.15 1.11222.54938.38615.5175.37459 1.67719.37459 1.67719s.22056 3.19781-.52 3.59437c-.50844.27188-1.2037-.28312-2.69918-2.8275-.76363-1.30125-1.34045-2.73937-1.34045-2.73937s-.1117-.26719-.31392-.41344c-.24074-.17344-.57778-.22875-.57778-.22875l-3.576447.0225s-.537333.015-.7347403.24562c-.1752593.20438-.0144445.62625-.0144445.62625S2.86864 8.90155 6.04064 12.1509c2.90815 2.9832 6.21306 2.7853 6.21306 2.7853h1.4974s.4516-.0506.6827-.2925c.2157-.225.2061-.6478.2061-.6478s-.0299-1.9772.9004-2.2678z" fill="#fff"/></svg>
+              </a>
             </li>
             <li class="main-footer__social-item">
-              <a href="#">Фейсбук</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8C5.79086 0 4 1.79086 4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+              </a>
             </li>
             <li class="main-footer__social-item">
-              <a href="#">Инстаграм</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.1184.49127-.17914.99467-.181 1.5 0 3.5899 2.91015 6.5 6.5 6.5 3.5899 0 6.5-2.9101 6.5-6.5-.0014-.50536-.0621-1.00882-.181-1.5H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/></svg>
+              </a>
             </li>
           </ul>
           <address class="main-footer__feedback">
